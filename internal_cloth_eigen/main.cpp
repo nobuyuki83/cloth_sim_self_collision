@@ -1,4 +1,4 @@
-﻿//
+//
 //  main.cpp
 //
 //  simple_cloth, 単純な布のシミュレーション
@@ -20,7 +20,7 @@
 #include <GL/glut.h>
 #endif
 
-#include "../Eigen/Dense"
+#include "Eigen/Dense"
 
 #include "../utility.h"
 #include "../solve_internal_eigen.h"
