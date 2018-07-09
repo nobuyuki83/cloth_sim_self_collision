@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97944BA182CAC9D00F21A24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A97944B9182CAC9D00F21A24 /* main.cpp */; };
+		A97944BE182CACBE00F21A24 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97944BD182CACBE00F21A24 /* GLUT.framework */; };
+		A97944C0182CACC400F21A24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97944BF182CACC400F21A24 /* OpenGL.framework */; };
+		A97944C3182CAD8800F21A24 /* self_collision_cloth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A97944C1182CAD8800F21A24 /* self_collision_cloth.cpp */; };
+		A9794624182F9B3E00F21A24 /* bvh_aabb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9794623182F9B3E00F21A24 /* bvh_aabb.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A97944AB182CABDE00F21A24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A97944B9182CAC9D00F21A24 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A97944BB182CACAF00F21A24 /* cloth_internal_physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cloth_internal_physics.h; path = ../cloth_internal_physics.h; sourceTree = "<group>"; };
+		A97944BC182CACAF00F21A24 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = ../utility.h; sourceTree = "<group>"; };
+		A97944BD182CACBE00F21A24 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		A97944BF182CACC400F21A24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A97944C1182CAD8800F21A24 /* self_collision_cloth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = self_collision_cloth.cpp; path = ../self_collision_cloth.cpp; sourceTree = "<group>"; };
+		A97944C2182CAD8800F21A24 /* self_collision_cloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = self_collision_cloth.h; path = ../self_collision_cloth.h; sourceTree = "<group>"; };
+		A979461F182CB66600F21A24 /* vector3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vector3d.h; path = ../vector3d.h; sourceTree = "<group>"; };
+		A9794621182CC2D300F21A24 /* bvh_aabb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bvh_aabb.h; path = ../bvh_aabb.h; sourceTree = "<group>"; };
+		A9794622182CC48A00F21A24 /* jagged_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jagged_array.h; path = ../jagged_array.h; sourceTree = "<group>"; };
+		A9794623182F9B3E00F21A24 /* bvh_aabb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bvh_aabb.cpp; path = ../bvh_aabb.cpp; sourceTree = "<group>"; };
+		A97946271835055700F21A24 /* self_contact_eigen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = self_contact_eigen; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97946281837C81000F21A24 /* solve_internal_eigen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = solve_internal_eigen.h; path = ../solve_internal_eigen.h; sourceTree = "<group>"; };
+		A97946291837C8D000F21A24 /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aabb.h; path = ../aabb.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97944AA182CABDE00F21A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97944C0182CACC400F21A24 /* OpenGL.framework in Frameworks */,
+				A97944BE182CACBE00F21A24 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A97944A4182CABDE00F21A24 = {
+			isa = PBXGroup;
+			children = (
+				A97946291837C8D000F21A24 /* aabb.h */,
+				A97946281837C81000F21A24 /* solve_internal_eigen.h */,
+				A9794622182CC48A00F21A24 /* jagged_array.h */,
+				A9794621182CC2D300F21A24 /* bvh_aabb.h */,
+				A9794623182F9B3E00F21A24 /* bvh_aabb.cpp */,
+				A979461F182CB66600F21A24 /* vector3d.h */,
+				A97944C1182CAD8800F21A24 /* self_collision_cloth.cpp */,
+				A97944C2182CAD8800F21A24 /* self_collision_cloth.h */,
+				A97944BF182CACC400F21A24 /* OpenGL.framework */,
+				A97944BD182CACBE00F21A24 /* GLUT.framework */,
+				A97944BB182CACAF00F21A24 /* cloth_internal_physics.h */,
+				A97944BC182CACAF00F21A24 /* utility.h */,
+				A97944B9182CAC9D00F21A24 /* main.cpp */,
+				A97946271835055700F21A24 /* self_contact_eigen */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97944AC182CABDE00F21A24 /* self_contact_eigen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97944B6182CABDE00F21A24 /* Build configuration list for PBXNativeTarget "self_contact_eigen" */;
+			buildPhases = (
+				A97944A9182CABDE00F21A24 /* Sources */,
+				A97944AA182CABDE00F21A24 /* Frameworks */,
+				A97944AB182CABDE00F21A24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = self_contact_eigen;
+			productName = self_contact;
+			productReference = A97946271835055700F21A24 /* self_contact_eigen */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97944A5182CABDE00F21A24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Nobuyuki Umetani";
+			};
+			buildConfigurationList = A97944A8182CABDE00F21A24 /* Build configuration list for PBXProject "self_contact_eigen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A97944A4182CABDE00F21A24;
+			productRefGroup = A97944A4182CABDE00F21A24;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97944AC182CABDE00F21A24 /* self_contact_eigen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97944A9182CABDE00F21A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97944BA182CAC9D00F21A24 /* main.cpp in Sources */,
+				A97944C3182CAD8800F21A24 /* self_collision_cloth.cpp in Sources */,
+				A9794624182F9B3E00F21A24 /* bvh_aabb.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A97944B4182CABDE00F21A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A97944B5182CABDE00F21A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A97944B7182CABDE00F21A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = self_contact_eigen;
+			};
+			name = Debug;
+		};
+		A97944B8182CABDE00F21A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = self_contact_eigen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97944A8182CABDE00F21A24 /* Build configuration list for PBXProject "self_contact_eigen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97944B4182CABDE00F21A24 /* Debug */,
+				A97944B5182CABDE00F21A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97944B6182CABDE00F21A24 /* Build configuration list for PBXNativeTarget "self_contact_eigen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97944B7182CABDE00F21A24 /* Debug */,
+				A97944B8182CABDE00F21A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A97944A5182CABDE00F21A24 /* Project object */;
+}
